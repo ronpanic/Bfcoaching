@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/bflogo.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <title>Buffalo Calculator</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <a href="../index.html"><h1> <span class="second-color">BF</span>COACHING</h1></a>
+                <li><img src="../images/handshake_FILL0_wght400_GRAD0_opsz48.svg"> Planes</li>
+                <li><img src="../images/vaccines_FILL0_wght400_GRAD0_opsz48.svg"> Asesoría</li>
+                <div class="linea"></div>
+                <li><img src="../images/calculate_FILL0_wght400_GRAD0_opsz48.svg"> Calculadora</li>
+                <div class="linea"></div>
+                <li><img src="../images/support_agent_FILL0_wght400_GRAD0_opsz48.svg"> Contacto</li>
+                <button><img src="../images/help_FILL0_wght400_GRAD0_opsz48.svg">¿Preguntas?</button>
+            </ul> 
+        </div>
+    </nav>
+    
+    <header>
+        <h1>Calculadora - <a class="volver1" href="calculadora.html">Volver</a> </h1>
+        <div class="linea2"></div>
+      
+        <div class="calculator-container">
+          <div class="elec-container">
+            <div class="hombre-container" id="hombre-container">
+              <h3>Hombre</h3>
+              <img src="../images/face_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+            </div>
+      
+            <div class="mujer-container" id="mujer-container">
+              <h3>Mujer</h3>
+              <img src="../images/face_4_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+            </div>
+          </div>
+        </div>
+      
+        <div> <!-- Agregado un div adicional -->
+          <div class="elec-container1" id="elec-container1">
+            <div class="flex-box">
+                <div class="volumen-container" id="volumen-container">
+                    <h3>Volumen</h3>
+                    <img src="../images/syringe_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                  </div>
+            
+                  <div class="definicion-container" id="definicion-container">
+                    <h3>Definicion</h3>
+                    <img src="../images/rib_cage_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+      
+        <form id="formulario-mujer">
+          <!-- Elementos del formulario para el caso de la mujer -->
+          <label for="edad">Edad:</label>
+          <input type="text" id="edad" name="edad" placeholder="Ingrese su edad">
+      
+          <label for="peso">Peso:</label>
+          <input type="text" id="peso" name="peso" placeholder="Ingrese su peso">
+      
+          <label for="altura">Altura:</label>
+          <input type="text" id="altura" name="altura" placeholder="Ingrese su altura">
+      
+          <label for="actividad">Nivel de actividad:</label>
+          <select id="actividad" name="actividad">
+            <option value="muy-activo">Muy activo</option>
+            <option value="poco-activo">Poco activo</option>
+            <option value="nada-activo">Nada activo</option>
+          </select>
+      
+          <button type="submit">Calcular</button>
+          <div id="resultado" style="display: none;">
+            <!-- Aquí se mostrará el resultado del cálculo de calorías -->
+          </div>
+        </form>
+      </header>
+      
+      
+    
+
+
+    <script src="../script.js"></script>
+</body>
+</html>
