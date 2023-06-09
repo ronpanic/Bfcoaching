@@ -14,6 +14,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+const preguntas = document.querySelectorAll(".pregunta_encabezado");
+
+preguntas.forEach((pregunta) => {
+	pregunta.addEventListener("click", () => {
+		removerClaseActivo();
+		pregunta.nextElementSibling.classList.add("activo");
+	});
+});
+
+function removerClaseActivo() {
+	preguntas.forEach((pregunta) => {
+		pregunta.nextElementSibling.classList.remove("activo");
+	});
+}
 
 
 const hombreContainer = document.getElementById('hombre-container');
@@ -97,3 +111,4 @@ formularioMujer.addEventListener('submit', function(e) {
     <p>Grasas necesarias por día: ${resultado.grasas} g</p>
   `;
 });
+
