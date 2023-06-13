@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/bflogo.png" type="image/png" />
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Buffalo Pago</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <a href="../index.html"><h1> <span class="second-color">BF</span>COACHING</h1></a>
+          <a href="../pages/planes.html"><li><img src="../images/handshake_FILL0_wght400_GRAD0_opsz48.svg"/>Planes</li></a>
+          <li>
+            <img src="../images/vaccines_FILL0_wght400_GRAD0_opsz48.svg" />
+            Asesoría
+          </li>
+          <div class="linea"></div>
+          <a href="../pages/calculadora.html"
+            ><li>
+              <img src="../images/calculate_FILL0_wght400_GRAD0_opsz48.svg" />
+              Calculadora
+            </li></a
+          >
+          <div class="linea"></div>
+          <li>
+            <img src="../images/support_agent_FILL0_wght400_GRAD0_opsz48.svg" />
+            Contacto
+          </li>
+          <button>
+            <a href="../pages/preguntas.html"><img src="../images/help_FILL0_wght400_GRAD0_opsz48.svg" />¿Preguntas?</a>
+          </button>
+        </ul>
+      </div>
+    </nav>
+
+
+    <header>
+      <h1>Buffalo Coaching - Finalizar Pago</h1>
+      <div class="linea2"></div>
+
+      <div class="all-container">
+
+        <div class="flex-container">
+
+          <div class="email-container">
+
+            <h3>1. Your Email</h3>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" autocomplete="off">
+            <p>Recibirás notificaciones en esta dirección de correo electrónico.</p>
+            <button id="continue-btn">Continuar</button>
+            
+          </div>
+          <div class="order-container">
+            <div class="payment-container">
+              <h3>Resumen del pedido</h3>
+              <div class="name-container">
+                <img src="../images/exercise_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                <h3 id="product-description">"Nombre del Plan"</h3>
+                <p id="precio-final">$15.00</p>
+              </div>
+              <input type="text" id="cupon" name="cupon" placeholder="Ingrese su código de descuento">
+              <div class="subtotal-container">
+                <p class="margin-name">Subtotal</p>
+                <p id="precio-final">$15.00</p>
+              </div>
+              <div class="tax-container">
+                <p class="margin-name1">Tax</p>
+                <p>$0.00</p>
+              </div>
+              <div class="total-container">
+                <p class="margin-name2">Total</p>
+                <p id="total">$15.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagos-container">
+          <h3>2. Pagos</h3>
+        
+          <div class="nombres-container">
+            <input type="text" id="first-name" name="first-name" placeholder="Primer nombre" required> 
+            <input type="text" id="last-name" name="last-name" placeholder="Segundo nombre" required>
+          </div>
+          <input type="text" id="location1" name="location1" placeholder="Locación 1" required>
+          <input type="text" id="location2" name="location2" placeholder="Locación 2">
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Elegir país</option>
+          </select>
+          <div class="lugares-container">
+            <input type="text" id="zip-code" name="zip-code" placeholder="Zip Code" required>
+            <input type="text" id="city" name="city" placeholder="Ciudad" required>
+            <input type="text" id="state" name="state" placeholder="Estado" required>
+          </div>
+          <button type="submit" id="continue-btn1">Continuar</button>
+          
+        </div>
+
+        <div class="revisar-container">
+          <h3>3. Revisar y Comprar</h3>
+          <div class="metododepago">    
+            <button class="check-btn">Checkout</button>
+            <a href="https://mpago.la/2fJyRiP"><button class="pagar-btn">Pagar con Mercado Pago</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="notifications-container">
+        <div class="success">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              
+              <svg class="succes-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div class="success-prompt-wrap">
+              <p class="success-prompt-heading">Order checked
+              </p><div class="success-prompt-prompt">
+                <p>Ahora solo faltaria hacer el pago tocando el boton de aca abajo</p>
+                <p class="p-atention">
+                  <span class="atention">¡Atención!</span>
+                  Pedimos que envíes un correo a este gmail
+                  <a href="mailto:correoexample@gmail.com?subject=Comprobante%20de%20pago&body=Adjunto%20la%20foto%20del%20comprobante%20de%20pago%20en%20Mercado%20Pago">correoexample@gmail.com</a>
+                  mandando una foto del comprobante del pago a realizar en Mercado Pago
+                </p>
+                
+              </div>
+                <div class="success-button-container">
+                  <button type="button" class="success-button-main">Continuar</button>
+                  <button type="button" class="success-button-secondary">¡Ayuda!</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+     </header>
+
+     
+     
+     <script defer src="../variables.js"></script>
+      <script defer src="../script.js"></script>
+      <script defer src="../infodinamic.js"></script>
+      <script defer src="../pagos.js"></script>
+     
+ </body>
+</html>
